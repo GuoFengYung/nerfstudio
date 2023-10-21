@@ -196,6 +196,7 @@ method_configs["nerfacto-huge"] = TrainerConfig(
             camera_optimizer=CameraOptimizerConfig(mode="SO3xR3"),
         ),
     ),
+
     optimizers={
         "proposal_networks": {
             "optimizer": RAdamOptimizerConfig(lr=1e-2, eps=1e-15),
